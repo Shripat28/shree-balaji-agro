@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Shree Balaji Agro Industries</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/contact.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../assets/images/logo.png" alt="Logo" />
+            <span>Shree Balaji Agro Industries</span>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="catalog.html">Products</a></li>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Us Page Content -->
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>
+            If you have any questions or inquiries, feel free to reach out to
+            us.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Plot No. 452, Industrial
+              Estate, HSIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+              Sonipat-131029, Haryana (India)
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a
+                href="mailto:balajiagroinds@gmail.com
+              "
+                >balajiagroinds@gmail.com
+              </a>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919811864847">+91 98118 64847</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us A Message</h3>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xjkynqwz"
+            method="POST"
+          >
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="company">Company Name:</label>
+            <input type="text" name="company" id="company" />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <!-- Optional additional fields -->
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" name="phone" id="phone" />
+
+            <label for="message">What are you looking for? (Optional):</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
