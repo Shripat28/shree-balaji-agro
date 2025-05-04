@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SBAI</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <script>
+      (function (w, d) {
+        w.CollectId = "68061ad13b5fcbcbdb789618";
+        var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.setAttribute("type", "text/javascript");
+        s.async = true;
+        s.setAttribute("src", "https://collectcdn.com/launcher.js");
+        h.appendChild(s);
+      })(window, document);
+    </script>
   </head>
   <body>
     <div class="scroll-progress-container">
@@ -21,7 +33,6 @@
         <div class="navbar-container">
           <div class="logo">
             <img src="assets/images/logo.png" alt="Logo" />
-            <span>Shree Balaji Agro Industries</span>
           </div>
           <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
@@ -57,13 +68,13 @@
               <img src="assets/images/slide2.jpg" alt="Slide 2" />
             </div>
             <div class="slide">
-              <img src="assets/images/slide3.jpg" alt="Slide 3" />
+              <img src="assets/images/cake-base-3.jpg" alt="Slide 3" />
             </div>
             <div class="slide">
-              <img src="assets/images/slide4.jpg" alt="Slide 4" />
+              <img src="assets/images/cakeboxS2.jpg" alt="Slide 4" />
             </div>
             <div class="slide">
-              <img src="assets/images/slide5.jpg" alt="Slide 5" />
+              <img src="assets/images/pastry-2.jpg" alt="Slide 5" />
             </div>
           </div>
         </div>
@@ -75,38 +86,64 @@
       <h2>Our Top Products</h2>
       <div class="product-cards-wrapper">
         <div class="product-card">
-          <img src="assets/images/product1.jpg" alt="Product 1" />
+          <img
+            src="../assets/images/mdf-cake-base-main.jpg"
+            alt="MDF Cake Base"
+          />
           <h3>MDF Cake Base</h3>
-          <p>
-            A sturdy and elegant base to support and showcase your cakes with
-            style.
-          </p>
-          <button class="details-btn" data-product="product1">
-            Show Details
+          <p>A sturdy and elegant base to support and showcase your cakes.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='pages/products/mdf-cake-base.html'"
+          >
+            Learn More
           </button>
         </div>
 
         <div class="product-card">
-          <img src="assets/images/product2.jpg" alt="Product 2" />
-          <h3>Paper Bowl</h3>
-          <p>
-            Eco-friendly and durable, perfect for serving hot and cold foods
-            alike.
-          </p>
-          <button class="details-btn" data-product="product2">
-            Show Details
-          </button>
-        </div>
-
-        <div class="product-card">
-          <img src="assets/images/product3.jpg" alt="Product 3" />
+          <img src="../assets/images/product3.jpg" alt="Pastry Base" />
           <h3>Pastry Base</h3>
           <p>
             The ideal foundation for creating and displaying delicious pastries
             with ease.
           </p>
-          <button class="details-btn" data-product="product3">
-            Show Details
+          <button
+            class="details-btn"
+            onclick="window.location.href='pages/products/pastry-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <!-- 1 -->
+        <div class="product-card">
+          <img src="../assets/images/product2.jpg" alt="MDF Cake Base" />
+          <h3>Paper Bowl</h3>
+          <p>
+            Eco-friendly and durable, perfect for serving hot and cold foods
+            alike.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='pages/products/paper-bowl.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../assets/images/catalog-cakebox-S.jpg"
+            alt="S Window Cake Box"
+          />
+          <h3>S Window Cake Box</h3>
+          <p>
+            Stylish packaging with a clear S-shaped window for presentation.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='pages/products/cake-box-S.html'"
+          >
+            Learn More
           </button>
         </div>
       </div>
@@ -127,16 +164,16 @@
     <section id="about" class="about-us">
       <div class="about-container">
         <div class="about-image">
-          <img src="assets/images/about-us.jpg"" alt="About Us">
+          <img src="assets/images/about-us.jpg" alt="About Us" />
         </div>
         <div class="about-text">
           <h2>About Us</h2>
           <p>
-            Shree Balaji Agro Industries is a young and dynamic partnership firm
-            established in November, 2024, with a strong vision to contribute to
-            India’s growing manufacturing sector. Based on the principles of
-            quality, trust, and innovation, we are committed to delivering
-            high-grade paper products and solutions.
+            Shree Balaji Agro Industries is a young and dynamic firm established
+            in November, 2018, with a strong vision to contribute to India’s
+            growing manufacturing sector. Based on the principles of quality,
+            trust, and innovation, we are committed to delivering high-grade
+            paper products and solutions.
           </p>
           <br />
           <p>
@@ -151,6 +188,20 @@
         </div>
       </div>
     </section>
+    <!-- WhatsApp Chat Button -->
+    <a
+      href="https://wa.me/919811864847"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat with us on WhatsApp"
+    >
+      <img
+        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        alt="Chat on WhatsApp"
+      />
+      <span class="tooltip-text">Chat with us</span>
+    </a>
+
     <footer class="footer">
       <div class="footer-content">
         <!-- Left Column: Copyright and Address -->
@@ -160,7 +211,7 @@
           </p>
           <p class="address">
             <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
-            Estate, HSIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
             Sonipat-131029, Haryana (India)
           </p>
         </div>
@@ -169,9 +220,7 @@
         <div class="footer-right">
           <p class="contact-info">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:balajiagroinds@gmail.com"
-              >balajiagroinds@gmail.com
-            </a>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
           </p>
           <p class="contact-info">
             <i class="fas fa-phone"></i>

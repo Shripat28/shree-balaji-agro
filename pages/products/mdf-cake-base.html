@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MDF Cake Base | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/yourkitid.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/mdf-cake-base-main.jpg"
+              alt="MDF Cake Base"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/mdf-cake-base-main.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/about-us.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/cake-base-3.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+
+            <!-- Tab Buttons -->
+            <div class="tab-buttons">
+              <button class="tab-button active" onclick="openTab(event, 'description')">Description</button>
+              <button class="tab-button" onclick="openTab(event, 'specifications')">Specifications</button>
+            </div>
+          
+            <!-- Tab Contents -->
+            <div id="description" class="tab-content active">
+              <div class="product-info">
+                <h2>MDF Cake Base</h2>
+          
+                <div class="rating">
+                  ⭐⭐⭐⭐⭐ <span>(5/5)</span>
+                </div>
+          
+                <p class="description">
+                  Our MDF Cake Base is a premium-quality platform designed to provide exceptional support and presentation for cakes of all sizes. 
+                  Crafted from high-density MDF material, it offers superior strength, durability, and a smooth, elegant finish that enhances the overall look of your baked creations.
+                </p>
+          
+                <ul class="features">
+                  <li><strong>Material:</strong> Premium Medium-Density Fiberboard (MDF)</li>
+                  <li><strong>Thickness:</strong> Upto 3mm for maximum sturdiness</li>
+                  <li><strong>Finish:</strong> Smooth white lamination, easy to wipe clean</li>
+                  <li><strong>Weight Capacity:</strong> Supports even heavy, multi-tiered cakes</li>
+                  <li><strong>Reusable:</strong> Designed for multiple uses with proper care</li>
+                  <li><strong>Eco-Friendly:</strong> Made with sustainable practices</li>
+                </ul>
+          
+                <div class="applications">
+                  <div class="application-item"><i class="fas fa-birthday-cake"></i> Perfect for Cake Presentations</div>
+                  <div class="application-item"><i class="fas fa-store"></i> Ideal for Bakeries and Cafés</div>
+                  <div class="application-item"><i class="fas fa-gift"></i> Great for Gifting Occasions</div>
+                  <div class="application-item"><i class="fas fa-hand-holding-heart"></i> Eco-Friendly and Reusable</div>
+                </div>
+          
+                <div class="call-to-action">
+                  <p>Ready to enhance your cake presentation? 
+                    <a href="../contactus.html" class="order-link"><strong>Order your MDF Cake Base today!</strong></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <div id="specifications" class="tab-content">
+              <div class="specifications-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Item</th>
+                      <th>Qty/Bag</th>
+                      <th>Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>6 inch</td><td>Gold/Black/White</td><td>750</td><td>2.50</td></tr>
+                    <tr><td>7 inch</td><td>Gold/Black/White</td><td>500</td><td>3.20</td></tr>
+                    <tr><td>8 inch</td><td>Gold/Black/White</td><td>500</td><td>4.10</td></tr>
+                    <tr><td>9 inch</td><td>Gold/Black/White</td><td>500</td><td>5.50</td></tr>
+                    <tr><td>10 inch</td><td>Gold/Black/White</td><td>400</td><td>6.40</td></tr>
+                    <tr><td>11 inch</td><td>Gold/Black/White</td><td>300</td><td>9.30</td></tr>
+                    <tr><td>12 inch</td><td>Gold/Black/White</td><td>250</td><td>9.30</td></tr>
+                    <tr><td>14 inch (H)</td><td>Gold/Black/White</td><td>150</td><td>22.00</td></tr>
+                    <tr><td>16 inch (H)</td><td>Gold/Black/White</td><td>125</td><td>26.50</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
+          
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img src="../../assets/images/product3.jpg" alt="Pastry Base" />
+          <h3>Pastry Base</h3>
+          <p>
+            The ideal foundation for creating and displaying delicious pastries
+            with ease.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='pastry-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+      <div class="product-card">
+        <img
+          src="../../assets/images/catalog-moulds-plum.jpg"
+          alt="Moulds for Plum cake"
+        />
+        <h3>Moulds for Plum cake</h3>
+        <p>Durable paper moulds designed for moist plum cake baking.</p>
+        <button
+            class="details-btn"
+            onclick="window.location.href='moulds-plum.html'"
+          >
+            Learn More
+          </button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="../../assets/images/catalog-chocolava.png"
+          alt="Choco lava - optima moulds"
+        />
+        <h3>Choco lava - Optima Moulds</h3>
+        <p>Specially crafted moulds for molten choco lava cakes.</p>
+        <button
+            class="details-btn"
+            onclick="window.location.href='chocolava.html'"
+          >
+            Learn More
+          </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../../assets/images/catalog-cupcake.jpg" alt="Cup cake" />
+        <h3>Cup Cake</h3>
+        <p>Bright and sturdy cupcake liners for home and commercial use.</p>
+        <button
+            class="details-btn"
+            onclick="window.location.href='cupcake.html'"
+          >
+            Learn More
+          </button>
+      </div>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="../scripts/product-page.js"></script>
+  </body>
+</html>

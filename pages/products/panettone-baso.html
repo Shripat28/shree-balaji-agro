@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panettone Baso | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/yourkitid.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-panettone-basso.png"
+              alt="Panettone Baso"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-panettone-basso.png"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/panettone-baso2.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/panettone-baso3.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Description and Specs -->
+        <div class="product-details">
+          <!-- Tab Buttons -->
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <!-- Description Tab -->
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Panettone Baso</h2>
+              <div class="rating">⭐⭐⭐⭐⭐ <span>(5/5)</span></div>
+              <p class="description">
+                Designed for rich and fluffy festive bakes, Panettone Baso
+                moulds offer a wide base and durable design. Ideal for heavier
+                recipes and celebrations, ensuring elegant presentation and
+                reliable structure.
+              </p>
+              <ul class="features">
+                <li>
+                  <strong>Material:</strong> Premium food-grade baking paper
+                </li>
+                <li>
+                  <strong>Wide Base:</strong> Supports rich and tall panettone
+                  types
+                </li>
+                <li>
+                  <strong>Temperature Resistance:</strong> Oven and freezer safe
+                </li>
+                <li>
+                  <strong>Moisture Barrier:</strong> Grease-proof and ready to
+                  use
+                </li>
+                <li>
+                  <strong>Eco-Conscious:</strong> Biodegradable and recyclable
+                </li>
+                <li><strong>Usage:</strong> Perfect for 500gm to 1kg cakes</li>
+              </ul>
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Bakeries & Patisseries
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-gift"></i> Festive Packaging
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-tree"></i> Holiday Baking
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-cookie-bite"></i> Premium Home Baking
+                </div>
+              </div>
+              <div class="call-to-action">
+                <p>
+                  Enhance your festive offerings with Panettone Baso.
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Place your order now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specifications Tab -->
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Bottom (mm)</th>
+                    <th>Height (mm)</th>
+                    <th>Qty/Box</th>
+                    <th>Item</th>
+                    <th>Rate (GST Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>G9F16001</td>
+                    <td>155</td>
+                    <td>55</td>
+                    <td>540</td>
+                    <td>M155/55 (500gm)</td>
+                    <td>16.90</td>
+                  </tr>
+                  <tr>
+                    <td>G9F16003</td>
+                    <td>170</td>
+                    <td>50</td>
+                    <td>540</td>
+                    <td>M170/50 (600gm)</td>
+                    <td>17.90</td>
+                  </tr>
+                  <tr>
+                    <td>G916005</td>
+                    <td>185</td>
+                    <td>60</td>
+                    <td>480</td>
+                    <td>M185/60 (700gm)</td>
+                    <td>20.50</td>
+                  </tr>
+                  <tr>
+                    <td>G9F16007</td>
+                    <td>200</td>
+                    <td>65</td>
+                    <td>480</td>
+                    <td>M200/65 (800gm)</td>
+                    <td>21.90</td>
+                  </tr>
+                  <tr>
+                    <td>G9F16009</td>
+                    <td>210</td>
+                    <td>70</td>
+                    <td>480</td>
+                    <td>M210/70 (1000gm)</td>
+                    <td>23.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-small-panettone.png"
+            alt="Small Panettone"
+          />
+          <h3>Small Panettone</h3>
+          <p>
+            Perfect for traditional festive baking and elegant presentation.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='small-panettone.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/mdf-cake-base-main.jpg"
+            alt="MDF Cake Base"
+          />
+          <h3>MDF Cake Base</h3>
+          <p>
+            Premium-quality MDF platforms for superior cake presentation and
+            support.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='mdf-cake-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-moulds-plum.jpg"
+            alt="Moulds for Plum cake"
+          />
+          <h3>Moulds for Plum cake</h3>
+          <p>
+            Durable and fancy paper moulds designed for moist plum cake baking.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='moulds-plum.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- 5 -->
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-ecos-mould-round.jpg"
+            alt="Ecos - Optima mould round"
+          />
+          <h3>Ecos - Optima mould round</h3>
+          <p>
+            Eco-friendly round moulds with premium and effective baking
+            performance.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='ecos-mould-round.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/product-page.js"></script>
+  </body>
+</html>

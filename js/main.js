@@ -8,66 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//for product modal
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.getElementById("product-modal");
-  const closeBtn = document.querySelector(".close-btn");
-  const modalImage = document.getElementById("modal-image");
-  const modalTitle = document.getElementById("modal-title");
-  const modalDescription = document.getElementById("modal-description");
-
-  // Product details mapping
-  const products = {
-    product1: {
-      image: "assets/images/product1-details.png",
-      title: "MDF Cake Base",
-      description:
-        "A sturdy and elegant base to support and showcase your cakes with style.",
-    },
-    product2: {
-      image: "assets/images/product2-details.png",
-      title: "Paper Bowl",
-      description:
-        "Eco-friendly and durable, perfect for serving hot and cold foods alike.",
-    },
-    product3: {
-      image: "assets/images/product3-details.png",
-      title: "Pastry Base",
-      description:
-        "The ideal foundation for creating and displaying delicious pastries with ease.",
-    },
-  };
-
-  // Show modal with the details of the selected product
-  const showModal = (productKey) => {
-    modalImage.src = products[productKey].image;
-    modalTitle.textContent = products[productKey].title;
-    modalDescription.textContent = products[productKey].description;
-    modal.style.display = "flex"; // Show the modal
-  };
-
-  // Close the modal when the close button is clicked
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  // Close the modal if clicked outside the modal content
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
-  // Attach event listeners to each 'Show Details' button
-  const detailsBtns = document.querySelectorAll(".details-btn");
-  detailsBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const productKey = btn.getAttribute("data-product");
-      showModal(productKey);
-    });
-  });
-});
-
 //for background animation
 const canvas = document.getElementById("rain-canvas");
 const ctx = canvas.getContext("2d");

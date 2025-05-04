@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Small Panettone | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/yourkitid.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/small-panettone2.jpg"
+              alt="Small Panettone"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/small-panettone2.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/catalog-small-panettone.png"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <!-- Tab Buttons -->
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Small Panettone</h2>
+
+              <div class="rating">⭐⭐⭐⭐☆ <span>(4/5)</span></div>
+
+              <p class="description">
+                Celebrate the tradition with our Small Panettone moulds, perfect
+                for festive baking and elegant presentation. Crafted to provide
+                structure, style, and easy demolding, they are a must-have for
+                professional and home bakers alike.
+              </p>
+
+              <ul class="features">
+                <li><strong>Material:</strong> High-quality baking paper</li>
+                <li>
+                  <strong>Temperature Resistance:</strong> Oven and freezer safe
+                </li>
+                <li>
+                  <strong>Elegant Designs:</strong> Classic brown-gold and solid
+                  colors available
+                </li>
+                <li>
+                  <strong>Moisture Resistant:</strong> No need for greasing
+                </li>
+                <li>
+                  <strong>Eco-Friendly:</strong> Biodegradable and food-safe
+                </li>
+                <li>
+                  <strong>Variety:</strong> Multiple size options for different
+                  recipes
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Bakery Shops
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-gift"></i> Gifting and Festive Hampers
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-tree"></i> Christmas and New Year Specials
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-cookie-bite"></i> Home Baking Enthusiasts
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Celebrate with style and flavor.
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Order your Panettone moulds now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Bottom (mm)</th>
+                    <th>Qty/Box</th>
+                    <th>Item</th>
+                    <th>Rate (GST Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>G9F13016</td>
+                    <td>60</td>
+                    <td>3000</td>
+                    <td>P60/45 (60gm)</td>
+                    <td>4.10</td>
+                  </tr>
+                  <tr>
+                    <td>G9F13129</td>
+                    <td>60</td>
+                    <td>3000</td>
+                    <td>P60/45 D.Brown Gold</td>
+                    <td>4.10</td>
+                  </tr>
+                  <tr>
+                    <td>G9F13182</td>
+                    <td>70</td>
+                    <td>2080</td>
+                    <td>P70/35 D.Brown Gold</td>
+                    <td>4.00</td>
+                  </tr>
+                  <tr>
+                    <td>G9F13004</td>
+                    <td>70</td>
+                    <td>2000</td>
+                    <td>P70/50 (100gm)</td>
+                    <td>4.90</td>
+                  </tr>
+                  <tr>
+                    <td>G9F13131</td>
+                    <td>70</td>
+                    <td>2000</td>
+                    <td>P70/50 D.Brown Gold</td>
+                    <td>4.90</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img
+            src="../../assets/images/mdf-cake-base-main.jpg"
+            alt="MDF Cake Base"
+          />
+          <h3>MDF Cake Base</h3>
+          <p>
+            Premium-quality MDF platforms for superior cake presentation and
+            support.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='mdf-cake-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="../../assets/images/product3.jpg" alt="Pastry Base" />
+          <h3>Pastry Base</h3>
+          <p>
+            The ideal foundation for creating and displaying delicious pastries
+            with ease.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='pastry-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img src="../../assets/images/catalog-cupcake.jpg" alt="Cup Cake" />
+          <h3>Cup Cake</h3>
+          <p>Bright and sturdy cupcake liners for home and commercial use.</p>
+          <button class="details-btn">Learn More</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-panettone-basso.png"
+            alt="Panettone Baso"
+          />
+          <h3>Panettone Baso</h3>
+          <p>
+            Wide base, ideal for rich, fluffy panettone creations and
+            celebrations.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='panettone-baso.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/product-page.js"></script>
+  </body>
+</html>

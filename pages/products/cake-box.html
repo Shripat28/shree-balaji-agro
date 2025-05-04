@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cake Box | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-cakebox.png"
+              alt="Cake Box"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-cakebox.png"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/cake-box2.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Cake Box</h2>
+              <div class="rating">⭐⭐⭐⭐☆ <span>(4/5)</span></div>
+              <p class="description">
+                Elegant and rigid cake boxes, perfect for packaging and
+                transporting cakes safely while maintaining presentation appeal.
+                Available in multiple sizes to suit different cake dimensions.
+              </p>
+              <ul class="features">
+                <li>
+                  <strong>Material:</strong> Sturdy cardboard with food-safe
+                  coating
+                </li>
+                <li>
+                  <strong>Design:</strong> Foldable, easy to assemble with
+                  secure lid
+                </li>
+                <li>
+                  <strong>Application:</strong> Ideal for bakeries, home bakers,
+                  and cafes
+                </li>
+                <li>
+                  <strong>Finish:</strong> Professional, clean presentation
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Birthday Cakes
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-store"></i> Bakery Shops
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-box"></i> Gift Packaging
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Want to order cake boxes in bulk?
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Reach out to us now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item (Inches)</th>
+                    <th>Base</th>
+                    <th>Height</th>
+                    <th>Qty./Box</th>
+                    <th>Rate (INR)*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>6x6x4</td>
+                    <td>6x6</td>
+                    <td>4</td>
+                    <td>100</td>
+                    <td>9.60</td>
+                  </tr>
+                  <tr>
+                    <td>7x7x4</td>
+                    <td>7x7</td>
+                    <td>4</td>
+                    <td>100</td>
+                    <td>10.80</td>
+                  </tr>
+                  <tr>
+                    <td>8x8x5</td>
+                    <td>8x8</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>13.20</td>
+                  </tr>
+                  <tr>
+                    <td>9x9x5</td>
+                    <td>9x9</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>15.60</td>
+                  </tr>
+                  <tr>
+                    <td>10x10x5</td>
+                    <td>10x10</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>18.00</td>
+                  </tr>
+                  <tr>
+                    <td>12x12x5</td>
+                    <td>12x12</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>21.60</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-top: 1rem">
+                <strong>*GST extra as applicable.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img src="../../assets/images/catalog-paperbag.png" alt="Paper Bag" />
+          <h3>Paper Bag</h3>
+          <p>Eco-friendly paper bags for carrying boxes and baked goods.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='paper-bag.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-brownie.jpg"
+            alt="Brownie Moulds"
+          />
+          <h3>Mould for Brownie</h3>
+          <p>
+            Durable and stylish moulds perfect for brownies and treats for
+            celebrations.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='brownie-moulds.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-cakebox-L.png"
+            alt="L Window Cake Box"
+          />
+          <h3>L Window Cake Box</h3>
+          <p>
+            Box with an L-shaped window for enhanced cake display and safety.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='cake-box-L.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- 16 -->
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-cakebox-S.jpg"
+            alt="S Window Cake Box"
+          />
+          <h3>S Window Cake Box</h3>
+          <p>
+            Stylish packaging with a clear S-shaped window for presentation.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='cake-box-S.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

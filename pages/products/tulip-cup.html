@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tulip Cup | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-tulip.jpg"
+              alt="Tulip Cup"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-tulip.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/tulip-cup2.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/tulip-cup3.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/tulip-cup4.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Tulip Cup</h2>
+              <div class="rating">⭐⭐⭐⭐⭐ <span>(5/5)</span></div>
+              <p class="description">
+                The Tulip Cup is a beautiful and decorative baking liner
+                designed in the shape of a tulip. It enhances the visual appeal
+                of cupcakes and muffins while providing excellent structural
+                support. These cups are ideal for bakeries, cafes, and premium
+                dessert presentations.
+              </p>
+              <ul class="features">
+                <li>
+                  <strong>Style:</strong> Distinctive tulip-petal folds for
+                  premium look
+                </li>
+                <li>
+                  <strong>Performance:</strong> Heat-resistant, holds shape
+                  during baking
+                </li>
+                <li>
+                  <strong>Application:</strong> Perfect for muffins, cupcakes,
+                  and gourmet desserts
+                </li>
+                <li>
+                  <strong>Ease:</strong> No greasing required, ready to use
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Designer Cupcakes
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-mug-hot"></i> Muffins
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-store"></i> Gift/Display Packaging
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Want to add elegance to your bakery items?
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Contact us to place an order!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item Code</th>
+                    <th>Bottom (mm)</th>
+                    <th>Height (mm)</th>
+                    <th>Qty/Box</th>
+                    <th>Rate (GST Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TC15050</td>
+                    <td>150x150</td>
+                    <td>50</td>
+                    <td>2000</td>
+                    <td>2.00</td>
+                  </tr>
+                  <tr>
+                    <td>TC14050</td>
+                    <td>140x140</td>
+                    <td>50</td>
+                    <td>2000</td>
+                    <td>1.90</td>
+                  </tr>
+                  <tr>
+                    <td>TC16050</td>
+                    <td>160x160</td>
+                    <td>50</td>
+                    <td>2000</td>
+                    <td>2.20</td>
+                  </tr>
+                  <tr>
+                    <td>TC11035</td>
+                    <td>110x110</td>
+                    <td>35</td>
+                    <td>3600</td>
+                    <td>1.60</td>
+                  </tr>
+                  <tr>
+                    <td>CROWN</td>
+                    <td>150x150</td>
+                    <td>50</td>
+                    <td>5000</td>
+                    <td>1.50</td>
+                  </tr>
+                  <tr>
+                    <td>STC15050</td>
+                    <td>150x150</td>
+                    <td>50</td>
+                    <td>1800</td>
+                    <td>1.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img src="../../assets/images/catalog-cupcake.jpg" alt="Cup Cake" />
+          <h3>Cup Cake</h3>
+          <p>Bright and sturdy cupcake liners for neat and colorful baking.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='cupcake.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="../../assets/images/catalog-plumpy.png" alt="Plumpy" />
+          <h3>Plumpy</h3>
+          <p>Compact round mould for rich, individual celebratory desserts.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='plumpy.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-chocolava.png"
+            alt="Choco Lava"
+          />
+          <h3>Choco Lava</h3>
+          <p>Specially crafted moulds for molten choco lava cakes.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='chocolava.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-panettone-basso.png"
+            alt="Panettone Basso"
+          />
+          <h3>Panettone Basso</h3>
+          <p>Wide base, ideal for rich, fluffy panettone creations.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='panettone-baso.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

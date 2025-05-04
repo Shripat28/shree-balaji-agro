@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cup Cake Liners | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-cupcake.jpg"
+              alt="Cup Cake Liners"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-cupcake.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/cupcake2.jpg"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/cupcake3.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <!-- Tabs -->
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <!-- Description Tab -->
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Cup Cake Liners</h2>
+              <div class="rating">⭐⭐⭐⭐⭐ <span>(5/5)</span></div>
+
+              <p class="description">
+                Reliable support for your baked creations with these bright and
+                sturdy cupcake liners. Available in white and brown paper,
+                they're designed to maintain shape, resist grease, and enhance
+                presentation in every bake.
+              </p>
+
+              <ul class="features">
+                <li>
+                  <strong>Color:</strong> White Paper (WP) / Brown Paper (BP)
+                </li>
+                <li>
+                  <strong>Build:</strong> Grease-resistant and firm structure
+                </li>
+                <li>
+                  <strong>Ideal For:</strong> Cupcakes, muffins, and tarts
+                </li>
+                <li>
+                  <strong>Environmentally Friendly:</strong> Made with food-safe
+                  paper
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-store"></i> Bakeries
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Home Baking
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-utensils"></i> Cafés and Caterers
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Give your cupcakes a professional edge.
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Contact us to order now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specifications Tab -->
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Item</th>
+                    <th>Bottom (mm)</th>
+                    <th>Height (mm)</th>
+                    <th>Qty/Box</th>
+                    <th>Rate (GST Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CC5045</td>
+                    <td>WP / BP</td>
+                    <td>50</td>
+                    <td>45</td>
+                    <td>5000</td>
+                    <td>1.30</td>
+                  </tr>
+                  <tr>
+                    <td>CC6045</td>
+                    <td>WP / BP</td>
+                    <td>60</td>
+                    <td>45</td>
+                    <td>3600</td>
+                    <td>1.50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-panettone-basso.png"
+            alt="Panettone Basso"
+          />
+          <h3>Panettone Basso</h3>
+          <p>
+            Wide base, ideal for rich, fluffy panettone creations and
+            celebrations.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='panettone-baso.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-ecos-mould-square.png"
+            alt="Ecos - Optima mould square"
+          />
+          <h3>Ecos - Optima mould square</h3>
+          <p>Square moulds perfect for modern desserts and clean cuts.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='ecos-mould-square.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- 7 -->
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-chocolava.png"
+            alt="Choco lava - optima moulds"
+          />
+          <h3>Choco lava - Optima Moulds</h3>
+          <p>Specially crafted moulds for molten choco lava cakes.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='chocolava.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-ecos-mould-round.jpg"
+            alt="Ecos - Optima mould round"
+          />
+          <h3>Ecos - Optima mould round</h3>
+          <p>
+            Eco-friendly round moulds with premium and effective baking
+            performance.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='ecos-mould-round.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

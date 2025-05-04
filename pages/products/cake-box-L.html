@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L Window Cake Box | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-cakebox-L.png"
+              alt="L Window Cake Box"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-cakebox-L.png"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/cake-boxL2.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>L Window Cake Box</h2>
+              <div class="rating">⭐⭐⭐⭐⭐ <span>(5/5)</span></div>
+              <p class="description">
+                The L Window Cake Box is designed to enhance your cake display
+                while ensuring safety during transport. The unique L-shaped
+                window provides a clear view of the cake, making it perfect for
+                bakeries, special events, and premium cake deliveries.
+              </p>
+              <ul class="features">
+                <li>
+                  <strong>Material:</strong> High-quality cardboard with
+                  food-safe coating
+                </li>
+                <li>
+                  <strong>Design:</strong> Elegant L-shaped window for enhanced
+                  cake visibility
+                </li>
+                <li>
+                  <strong>Usage:</strong> Ideal for cakes, pastries, and
+                  desserts requiring an elegant presentation
+                </li>
+                <li>
+                  <strong>Easy to Assemble:</strong> Foldable and secure design
+                  for quick setup
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-birthday-cake"></i> Wedding Cakes
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-store"></i> Bakery Shops
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-box"></i> Gift Packaging
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Want to order L Window Cake Boxes in bulk?
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Reach out to us now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item (Inches)</th>
+                    <th>Base</th>
+                    <th>Height</th>
+                    <th>Qty./Box</th>
+                    <th>Rate (INR)*</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8x8x5</td>
+                    <td>8x8</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>14.85</td>
+                  </tr>
+                  <tr>
+                    <td>10x10x5</td>
+                    <td>10x10</td>
+                    <td>5</td>
+                    <td>100</td>
+                    <td>20.90</td>
+                  </tr>
+                  <tr>
+                    <td>8x8x8</td>
+                    <td>8x8</td>
+                    <td>8</td>
+                    <td>100</td>
+                    <td>30.80</td>
+                  </tr>
+                  <tr>
+                    <td>10x10x8</td>
+                    <td>10x10</td>
+                    <td>8</td>
+                    <td>100</td>
+                    <td>37.40</td>
+                  </tr>
+                  <tr>
+                    <td>12x12x8</td>
+                    <td>12x12</td>
+                    <td>8</td>
+                    <td>100</td>
+                    <td>60.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="margin-top: 1rem">
+                <strong>*GST extra as applicable.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-cakebox-S.jpg"
+            alt="S Window Cake Box"
+          />
+          <h3>S Window Cake Box</h3>
+          <p>
+            Stylish packaging with a clear S-shaped window for presentation.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='cake-box-S.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="../../assets/images/catalog-paperbag.png" alt="Paper Bag" />
+          <h3>Paper Bag</h3>
+          <p>Eco-friendly paper bags for carrying boxes and baked goods.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='paper-bag.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="../../assets/images/catalog-cakebox.png" alt="Cake box" />
+          <h3>Cake Box</h3>
+          <p>Rigid and elegant boxes to transport and present your cakes.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='cake-box.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-optimamould.png"
+            alt="Optima Moulds"
+          />
+          <h3>Optima Moulds</h3>
+          <p>Premium optima moulds for professional baking applications.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='optima-moulds.html'"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

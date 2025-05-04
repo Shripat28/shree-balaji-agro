@@ -1,3 +1,13 @@
+// Toggle mobile menu
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+});
+
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", async function (e) {

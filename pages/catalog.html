@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Catalog | Shree Balaji Agro Industries</title>
+    <title>Product Catalog | SBAI</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      (function (w, d) {
+        w.CollectId = "68061ad13b5fcbcbdb789618";
+        var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.setAttribute("type", "text/javascript");
+        s.async = true;
+        s.setAttribute("src", "https://collectcdn.com/launcher.js");
+        h.appendChild(s);
+      })(window, document);
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -17,7 +29,6 @@
         <div class="navbar-container">
           <div class="logo">
             <img src="../assets/images/logo.png" alt="Logo" />
-            <span>Shree Balaji Agro Industries</span>
           </div>
           <ul class="nav-links" id="navLinks">
             <li><a href="../index.html">Home</a></li>
@@ -36,7 +47,7 @@
 
     <!-- Photo Gallery Section -->
     <section class="photo-gallery">
-      <h2>Our Photo Gallery</h2>
+      <h2>Photo Gallery</h2>
       <div class="gallery-container">
         <div class="gallery-item">
           <img src="../assets/images/product2.jpg" alt="Gallery Image 1" />
@@ -71,7 +82,7 @@
 
     <!-- Product Catalog Section -->
     <section class="product-catalog">
-      <h2>Our Complete Product Catalog</h2>
+      <h2>Complete Product Catalog</h2>
 
       <div class="search-container">
         <input type="text" id="searchBar" placeholder="Search products..." />
@@ -80,12 +91,34 @@
       <div class="catalog-wrapper">
         <!-- 1 -->
         <div class="product-card">
-          <img src="../assets/images/product1.jpg" alt="MDF Cake Base" />
+          <img
+            src="../assets/images/mdf-cake-base-main.jpg"
+            alt="MDF Cake Base"
+          />
           <h3>MDF Cake Base</h3>
           <p>A sturdy and elegant base to support and showcase your cakes.</p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/mdf-cake-base.html'"
+          >
+            Learn More
+          </button>
         </div>
 
+        <div class="product-card">
+          <img src="../assets/images/product3.jpg" alt="Pastry Base" />
+          <h3>Pastry Base</h3>
+          <p>
+            The ideal foundation for creating and displaying delicious pastries
+            with ease.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/pastry-base.html'"
+          >
+            Learn More
+          </button>
+        </div>
         <!-- 1 -->
         <div class="product-card">
           <img src="../assets/images/product2.jpg" alt="MDF Cake Base" />
@@ -94,30 +127,30 @@
             Eco-friendly and durable, perfect for serving hot and cold foods
             alike.
           </p>
-          <button class="details-btn">Learn More</button>
-        </div>
-
-        <div class="product-card">
-          <img src="../assets/images/product3.jpg" alt="MDF Cake Base" />
-          <h3>Pastry Base</h3>
-          <p>
-            The ideal foundation for creating and displaying delicious pastries
-            with ease.
-          </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/paper-bowl.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 2 -->
         <div class="product-card">
           <img
-            src="../assets/images/catalog-small-panettone.jpg"
+            src="../assets/images/catalog-small-panettone.png"
             alt="Small Panettone"
           />
           <h3>Small Panettone</h3>
           <p>
             Perfect for traditional festive baking and elegant presentation.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/small-panettone.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 3 -->
@@ -131,7 +164,12 @@
             Wide base, ideal for rich, fluffy panettone creations and
             celebrations.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/panettone-baso.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 4 -->
@@ -141,8 +179,15 @@
             alt="Moulds for Plum cake"
           />
           <h3>Moulds for Plum cake</h3>
-          <p>Durable paper moulds designed for moist plum cake baking.</p>
-          <button class="details-btn">Learn More</button>
+          <p>
+            Durable and fancy paper moulds designed for moist plum cake baking.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/moulds-plum.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 5 -->
@@ -152,8 +197,16 @@
             alt="Ecos - Optima mould round"
           />
           <h3>Ecos - Optima mould round</h3>
-          <p>Eco-friendly round moulds with premium baking performance.</p>
-          <button class="details-btn">Learn More</button>
+          <p>
+            Eco-friendly round moulds with premium and effective baking
+            performance.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/ecos-mould-round.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 6 -->
@@ -164,7 +217,12 @@
           />
           <h3>Ecos - Optima mould square</h3>
           <p>Square moulds perfect for modern desserts and clean cuts.</p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/ecos-mould-square.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 7 -->
@@ -175,15 +233,28 @@
           />
           <h3>Choco lava - Optima Moulds</h3>
           <p>Specially crafted moulds for molten choco lava cakes.</p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/chocolava.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 8 -->
         <div class="product-card">
           <img src="../assets/images/catalog-cupcake.jpg" alt="Cup cake" />
-          <h3>Cup Cake</h3>
-          <p>Bright and sturdy cupcake liners for home and commercial use.</p>
-          <button class="details-btn">Learn More</button>
+          <h3>Cup Cake Liners</h3>
+          <p>
+            Reliable support for your baked creations with these bright and
+            sturdy cupcake liners
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/cupcake.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 9 -->
@@ -193,16 +264,31 @@
             alt="Mould for brownie"
           />
           <h3>Mould for Brownie</h3>
-          <p>Grease-resistant paper moulds to bake perfect brownies.</p>
-          <button class="details-btn">Learn More</button>
+          <p>
+            Grease-resistant and fancy paper moulds to bake perfect brownies.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/brownie-moulds.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 10 -->
         <div class="product-card">
           <img src="../assets/images/catalog-plumpy.png" alt="Plumpy" />
           <h3>Plumpy</h3>
-          <p>Compact round mould for plump, rich individual desserts.</p>
-          <button class="details-btn">Learn More</button>
+          <p>
+            Compact round mould for plump, rich individual desserts and
+            celebrations.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/plumpy.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 11 -->
@@ -212,7 +298,12 @@
           <p>
             Decorative baking cups shaped like tulips for cupcakes and muffins.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/tulip-cup.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 12 -->
@@ -222,7 +313,12 @@
           <p>
             Strong and eco-conscious paper bags for baked goods and packaging.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/paper-bag.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 13 -->
@@ -235,7 +331,12 @@
           <p>
             Premium range of optima moulds for versatile bakery applications.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/optima-moulds.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 14 -->
@@ -243,7 +344,12 @@
           <img src="../assets/images/catalog-cakebox.png" alt="Cake box" />
           <h3>Cake Box</h3>
           <p>Rigid and elegant boxes to transport and present your cakes.</p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/cake-box.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 15 -->
@@ -256,7 +362,12 @@
           <p>
             Box with an L-shaped window for enhanced cake display and safety.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/cake-box-L.html'"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- 16 -->
@@ -269,21 +380,56 @@
           <p>
             Stylish packaging with a clear S-shaped window for presentation.
           </p>
-          <button class="details-btn">Learn More</button>
+          <button
+            class="details-btn"
+            onclick="window.location.href='products/cake-box-S.html'"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </section>
-    <!-- Modal Popup -->
-    <div class="modal" id="product-modal">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <img id="modal-image" src="" alt="Product Image" />
-        <h3 id="modal-title"></h3>
-        <p id="modal-description"></p>
-      </div>
-    </div>
+    <!-- WhatsApp Chat Button -->
+    <a
+      href="https://wa.me/919811864847"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat with us on WhatsApp"
+    >
+      <img
+        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        alt="WhatsApp"
+      />
+      <span class="tooltip-text">Chat with us</span>
+    </a>
 
-    <!-- Next: Product Catalog Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="../js/catalog.js" defer></script>
   </body>
 </html>

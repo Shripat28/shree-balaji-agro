@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Choco Lava - Optima Moulds | Shree Balaji Agro</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="../../js/product.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../../assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/catalog.html">Products</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="product-details">
+      <div class="product-wrapper">
+        <!-- Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="currentImage"
+              src="../../assets/images/catalog-chocolava.png"
+              alt="Choco Lava - Optima Moulds"
+            />
+          </div>
+          <div class="thumbnails">
+            <img
+              src="../../assets/images/catalog-chocolava.png"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="../../assets/images/chocolava2.jpg"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="product-details">
+          <!-- Tabs -->
+          <div class="tab-buttons">
+            <button
+              class="tab-button active"
+              onclick="openTab(event, 'description')"
+            >
+              Description
+            </button>
+            <button
+              class="tab-button"
+              onclick="openTab(event, 'specifications')"
+            >
+              Specifications
+            </button>
+          </div>
+
+          <!-- Description Tab -->
+          <div id="description" class="tab-content active">
+            <div class="product-info">
+              <h2>Choco Lava - Optima Moulds</h2>
+              <div class="rating">⭐⭐⭐⭐☆ <span>(4/5)</span></div>
+
+              <p class="description">
+                Specially crafted for molten choco lava cakes, these moulds are
+                designed to provide perfect, consistent results every time.
+                Their durable structure ensures uniform heat distribution for a
+                delectable lava center. Ideal for both home bakers and
+                professional kitchens.
+              </p>
+
+              <ul class="features">
+                <li>
+                  <strong>Design:</strong> Ideal for molten lava cakes with
+                  deep, sturdy sidewalls.
+                </li>
+                <li>
+                  <strong>Material:</strong> High-quality, heat-resistant
+                  material for even cooking.
+                </li>
+                <li>
+                  <strong>Shape:</strong> Perfectly shaped for molten cakes to
+                  flow out easily.
+                </li>
+                <li>
+                  <strong>Usage:</strong> Best used for making lava cakes,
+                  individual desserts, and chocolate treats.
+                </li>
+              </ul>
+
+              <div class="applications">
+                <div class="application-item">
+                  <i class="fas fa-store"></i> Bakeries
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-gift"></i> Dessert Packaging
+                </div>
+                <div class="application-item">
+                  <i class="fas fa-cake"></i> Gourmet Kitchens
+                </div>
+              </div>
+
+              <div class="call-to-action">
+                <p>
+                  Perfect your molten creations with our Choco Lava Moulds.
+                  <a href="../contactus.html" class="order-link"
+                    ><strong>Contact us to order now!</strong></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specifications Tab -->
+          <div id="specifications" class="tab-content">
+            <div class="specifications-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Item</th>
+                    <th>Bottom (mm)</th>
+                    <th>Height (mm)</th>
+                    <th>Qty/Box</th>
+                    <th>Rate (GST Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>G9F08220</td>
+                    <td>OP66-40 Dark Brown</td>
+                    <td>54</td>
+                    <td>40</td>
+                    <td>3360</td>
+                    <td>4.90</td>
+                  </tr>
+                  <tr>
+                    <td>G9F08185</td>
+                    <td>OP80-38 Dark Brown</td>
+                    <td>58</td>
+                    <td>38</td>
+                    <td>2520</td>
+                    <td>5.90</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h3>More Products Like This</h3>
+      <div class="catalog-wrapper">
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-panettone-basso.png"
+            alt="Panettone Basso"
+          />
+          <h3>Panettone Basso</h3>
+          <p>
+            Wide base, ideal for rich, fluffy panettone creations and
+            celebrations.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='panettone-baso.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-moulds-plum.jpg"
+            alt="Moulds for Plum Cake"
+          />
+          <h3>Moulds for Plum Cake</h3>
+          <p>
+            Durable paper moulds designed for moist plum cake baking.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='moulds-plum.html'"
+          >
+            Learn More
+          </button>
+        </div>
+        
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-ecos-mould-square.png"
+            alt="Ecos - Optima mould square"
+          />
+          <h3>Ecos - Optima mould square</h3>
+          <p>Square moulds perfect for modern desserts and clean cuts.</p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='ecos-mould-square.html'"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="../../assets/images/catalog-ecos-mould-round.jpg"
+            alt="Ecos - Optima mould round"
+          />
+          <h3>Ecos - Optima mould round</h3>
+          <p>
+            Eco-friendly round moulds with premium baking
+            performance.
+          </p>
+          <button
+            class="details-btn"
+            onclick="window.location.href='ecos-mould-round.html'"
+          >
+            Learn More
+          </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Left Column: Copyright and Address -->
+        <div class="footer-left">
+          <p class="copyright">
+            &copy; 2025 Shree Balaji Agro Industries. All Rights Reserved.
+          </p>
+          <p class="address">
+            <i class="fas fa-map-marker-alt"></i>Plot No. 452, Industrial
+            Estate, HSIIDC, Phase-1, Sec-38, Food Park, Rai, Dist.
+            Sonipat-131029, Haryana (India)
+          </p>
+        </div>
+
+        <!-- Right Column: Contact Info (Email & Phone) -->
+        <div class="footer-right">
+          <p class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:contact@sbaipack.com">contact@sbaipack.com</a>
+          </p>
+          <p class="contact-info">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919811864847">+91 98118 64847</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
