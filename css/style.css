@@ -806,105 +806,11 @@ header {
   overflow: auto; /* Scroll if the image is too tall */
 }
 
-/* Photo Gallery Section */
-.photo-gallery {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #efffe9, #e6f5d6);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.photo-gallery h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Gallery Container */
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  gap: 15px;
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery-item {
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: transform 0.3s ease, opacity 0.5s ease;
-  overflow: hidden;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 200px; /* Set fixed height for uniformity */
-  object-fit: cover; /* Ensure images fit nicely without stretching */
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effects */
-.gallery-item:hover {
-  transform: scale(1.05) rotate(1deg);
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05) rotate(-2deg);
-}
-
-/* Smooth Animation with Less Jumping */
-@keyframes randomPosition {
-  0% {
-    transform: translateX(0) translateY(0);
-    opacity: 0.6;
+/* Responsive */
+@media (max-width: 768px) {
+  .slide {
+    min-width: 180px;
   }
-  25% {
-    transform: translateX(30px) translateY(-30px);
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(-30px) translateY(30px);
-    opacity: 0.8;
-  }
-  75% {
-    transform: translateX(15px) translateY(-15px);
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateX(0) translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Apply Animation to Gallery Items */
-.gallery-item:nth-child(1) {
-  animation: randomPosition 5s ease-in-out infinite;
-}
-
-.gallery-item:nth-child(2) {
-  animation: randomPosition 5s ease-in-out 0.5s infinite;
-}
-
-.gallery-item:nth-child(3) {
-  animation: randomPosition 5s ease-in-out 1s infinite;
-}
-
-.gallery-item:nth-child(4) {
-  animation: randomPosition 5s ease-in-out 1.5s infinite;
-}
-
-.gallery-item:nth-child(5) {
-  animation: randomPosition 5s ease-in-out 2s infinite;
-}
-
-.gallery-item:nth-child(6) {
-  animation: randomPosition 5s ease-in-out 2.5s infinite;
 }
 
 /* Responsive Layout */
